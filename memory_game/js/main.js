@@ -23,12 +23,13 @@ const cards = [
 
 
 const cardsInPlay = [];
+let statusMessage = document.getElementById("statusMessage");
 
 function checkForMatch(){
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-			alert("You found a match!")
+			statusMessage.textContent = "You found a match!"
 		} else {
-			alert("Sorry, try again")
+			statusMessage.textContent = "No match, try again"
 		}
 	};
 
@@ -59,31 +60,3 @@ function createBoard(){
 };
 
 createBoard();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
